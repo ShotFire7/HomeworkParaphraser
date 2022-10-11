@@ -6,7 +6,7 @@ import time
 
 #Open input data, iterate through the lines, and append every second line to a list
 #Input data format goes like this: term \n definition
-f = open("inputdata.txt", "r")
+f = open("inputdata.txt", "r", encoding="utf8")
 definitionList = []
 newList = []
 listIter = 0
@@ -77,7 +77,7 @@ ii = 0
 countingVar = 1
 
 #sorting some data
-with open('inputdata.txt', 'r') as file:
+with open('inputdata.txt', 'r', encoding="utf8") as file:
     data = file.readlines()
 
 #doublespace the input data, add a dash and space after the words
